@@ -187,11 +187,14 @@ a las **10:00 ET**:
 - **Hallazgo 3 — el VRP a un día es económicamente diminuto.** VRP realizado mediano de
   10:00 ET a cierre ≈ **0.0011% del subyacente**, difícil de monetizar después de costos.
 
-- **Performance:** put ratio spreads SR 0.93 neto; strangle/straddle SR 0.39 neto;
-  canasta top-3 equiponderada SR 0.82 neto. Sharpe brutos típicos 0.56-1.18 antes de
-  costos.
+- **Performance: ⚠️ CIFRAS RETRACTADAS POR EL PROPIO AUTOR.** La versión original
+  reportaba put ratio spreads SR 0.93 neto y canasta top-3 SR 0.82 neto. En 2026-08 se
+  documentó un **error de escala en los costos de transacción** (el medio spread se
+  cobraba a 1/100 de su tamaño real: 0.022 bp en vez de 2.2 bp). Corregido, **ninguna
+  estructura conserva un Sharpe neto positivo**. Ver `docs/0dte-estrategias-literatura.md`
+  para el detalle.
 
-  https://github.com/vilkovgr/0dte-strategies/blob/main/docs/paper/paper-annotated.md
+  https://github.com/vilkovgr/0dte-strategies/blob/main/KNOWN-ISSUES.md
 
 ### C.3 Costos de transacción: el predictor negativo más fuerte
 
